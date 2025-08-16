@@ -17,7 +17,7 @@ jobs:
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
-          password: ${{ secrets.VPS_PASS }}
+          password: ${{ secrets.VPS_PASSWORD }}
           script: |
             export NVM_DIR="$HOME/.nvm"
             source "$NVM_DIR/nvm.sh"
