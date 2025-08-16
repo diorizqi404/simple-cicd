@@ -23,7 +23,7 @@ jobs:
             source "$NVM_DIR/nvm.sh"
             nvm use 22
 
-            cd ~/apps/express-app
+            cd ~/apps/simple-cicd
             git pull origin main
             npm install --production
-            pm2 restart express-app || pm2 start index.js --name express-app
+            pm2 restart simple-cicd || pm2 start index.js --name simple-cicd
